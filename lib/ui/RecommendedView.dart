@@ -10,9 +10,9 @@ class RecommendedView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          RecommendedItemCard("assets/images/home_icon.png", "Flutter", "Myanmar", 500, (){}),
-          RecommendedItemCard("assets/images/home_icon.png", "Flutter", "Myanmar", 500, (){}),
-          RecommendedItemCard("assets/images/home_icon.png", "Flutter", "Myanmar", 500, (){})
+          RecommendedItemCard("assets/images/image-one.png", "One", "Myanmar", 500, (){}),
+          RecommendedItemCard("assets/images/image-two.png", "Two", "Eng", 300, (){}),
+          RecommendedItemCard("assets/images/image-three.png", "Three", "Thai", 200, (){})
         ],
       ),
     );
