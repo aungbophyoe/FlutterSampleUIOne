@@ -13,16 +13,12 @@ class TitleWithMoreBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+      padding: const EdgeInsets.only(left: 20),
       child: Row(
         children: [
           TitleWithCustomUnderline(title),
           Spacer(),
           FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)
-              ),
-              color: Colors.red,
               onPressed: press(),
               child: Text(
                 "More",
