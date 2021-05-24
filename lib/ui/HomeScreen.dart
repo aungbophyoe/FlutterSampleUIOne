@@ -3,6 +3,7 @@ import 'package:flutter_ui_sample_one/constants.dart';
 import 'package:flutter_ui_sample_one/ui/HeaderWithSearchBar.dart';
 import 'package:flutter_ui_sample_one/ui/RecommendedItemCard.dart';
 
+import 'FeaturedItems.dart';
 import 'RecommendedView.dart';
 import 'TitleWithMoreBtn.dart';
 
@@ -17,7 +18,10 @@ class HomeScreen extends StatelessWidget {
           children: [
             HeaderWithSearchBar(size),
             TitleWithMoreBtn("Recommended",(){}),
-            RecommendedView()
+            RecommendedView(),
+            TitleWithMoreBtn("Featured Items", (){}),
+            FeaturedItems(),
+            SizedBox(height: kDefaultPadding)
           ],
         ),
       ),
